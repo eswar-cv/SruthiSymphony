@@ -25,7 +25,7 @@ from moviepy.editor import VideoFileClip, AudioFileClip, VideoClip
 import datetime
 from song_processor import song_processor
 class video_generator:
-    def __init__(self, default_padding = 0.5, length = 1200, default_border_radius = 20):
+    def __init__(self, default_padding = 0.5, length = 800, default_border_radius = 20):
         self.default_padding = default_padding
         self.length = length
         self.size = (length, length)
