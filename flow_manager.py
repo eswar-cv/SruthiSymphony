@@ -41,7 +41,7 @@ class flow_manager:
         audio_length = AudioSegment.from_file(fname).duration_seconds
         song_details['user_notes'] = user_notes
         song_details['raga'] = raga
-        video_location = self.video_maker.make_demo_video(fname, song_details, audio_length, 4)
+        video_location = self.video_maker.make_demo_video(fname, song_details, audio_length, 1)
         return video_location, song_details
     
     def make_report(self, fname, base_song_data):
@@ -51,7 +51,7 @@ class flow_manager:
         # print(song_details)
         audio_length = AudioSegment.from_file(fname).duration_seconds
         song_details['user_notes'] = base_song_data
-        video_location = self.video_maker.make_demo_video(fname, song_details, audio_length, 4)
+        video_location = self.video_maker.make_demo_video(fname, song_details, audio_length, 1)
         return video_location, song_details
     
 if __name__ == '__main__':
