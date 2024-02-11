@@ -37,6 +37,7 @@ class lyric_extraction:
             'Tamil': 'ta',
             'Telugu': 'tg',
             'Urdu': 'ur',
+            'Auto': 'auto',
         }
         for key, value in list(self.language_to_iso.items()):
             self.language_to_iso[key.lower()] = value
