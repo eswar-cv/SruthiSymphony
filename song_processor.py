@@ -2,7 +2,7 @@
 import os, sys
 from pre_processing import pre_processing
 from note_identification import note_identification
-from lyric_extraction_v2 import lyric_extraction
+from lyric_extraction import lyric_extraction
 from raga_identification import raga_identification
 import subprocess
 import soundfile as sf
